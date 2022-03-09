@@ -25,7 +25,7 @@ app.post('/edit', async (req,res)=>{
     res.redirect('/all')
 })
 app.post('/createComment', async (req,res)=>{
-    //id product
+    //product id
     const id = req.body.txtId
     const comment = req.body.txtComment
     const newComment = {
@@ -42,7 +42,6 @@ app.post('/createComment', async (req,res)=>{
 
 })
 app.get('/createComment',async (req,res)=>{
-    //lay thong tin san pham can tao comment
     const id = req.query.id
     
     const collectionName = 'comments'
