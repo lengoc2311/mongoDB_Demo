@@ -21,7 +21,6 @@
     </style>
 </head>
 <body>
-
      <nav class="navbar navbar-expand-sm bg-white navbar-white">
   <a class="navbar-brand" href="/all">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Barbie_Logo.svg/1200px-Barbie_Logo.svg.png" alt="logo" style="width:150px;margin-left: 40px;">
@@ -35,10 +34,12 @@
     </li>
   </ul>
 </nav>
+
     <form class="form-control"action="/insert" method="post" style="width: 30%;margin-left: 500px;border-color:palevioletred;background-color:rgb(247, 218, 223);">
     <div >
         <label style="font-family:'Sansita Swashed', cursive;" class="">Product name</label>
        <input type="text" name="txtName">
+       <span style="font-family:'Sansita Swashed', cursive; font-size:10;">{{nameError}}</span>
     </div> <br>
     <div>
         <label style="font-family:'Sansita Swashed', cursive;">Price</label> 
